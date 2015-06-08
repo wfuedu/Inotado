@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Course>
+	<assignments />
+	<bbid />
+	<course_documents />
+	<course_standards />
+	<course_template_id />
+	<created_at>2013-08-16T02:42:14-04:00</created_at>
+	<enrollments>
+		<enrollment>
+			<course_id>808</course_id>
+			<created_at>2014-12-02T10:54:27-05:00</created_at>
+			<id>11919</id>
+			<role_id />
+			<student_peekable>false</student_peekable>
+			<updated_at>2014-12-02T10:54:27-05:00</updated_at>
+			<user_id>4264</user_id>
+		</enrollment>
+		<enrollment>
+			<course_id>808</course_id>
+			<created_at>2014-12-02T16:39:20-05:00</created_at>
+			<id>11940</id>
+			<role_id />
+			<student_peekable>false</student_peekable>
+			<updated_at>2014-12-02T16:39:20-05:00</updated_at>
+			<user_id>4094</user_id>
+		</enrollment>
+	</enrollments>
+	<id>808</id>
+	<kind>college</kind>
+	<lms_identifier />
+	<name />
+	<school_id>51</school_id>
+	<system_origin>SC</system_origin>
+	<template>0</template>
+	<updated_at>2013-08-16T02:42:14-04:00</updated_at>
+</Course>

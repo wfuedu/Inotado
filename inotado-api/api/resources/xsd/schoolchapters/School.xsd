@@ -1,0 +1,27 @@
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="School">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="address_id" />
+				<xs:element type="xs:string" name="bbhostname" />
+				<xs:element type="xs:string" name="can_pay_with_card" />
+				<xs:element type="xs:string" name="client_application_key" />
+				<xs:element type="xs:string" name="created_at" />
+				<xs:element type="xs:string" name="expiration" />
+				<xs:element type="xs:string" name="force_assignment_kind" />
+				<xs:element type="xs:int" name="id" />
+				<xs:element type="xs:string" name="name" />
+				<xs:element type="xs:string" name="organization_id" />
+				<xs:element type="xs:string" name="prevent_lms_role_update" />
+				<xs:element type="xs:string" name="sandbox" />
+				<xs:element type="xs:string" name="sso_secret" />
+				<xs:element type="xs:string" name="test" />
+				<xs:element type="xs:string" name="tool_consumer_instance_guid" />
+				<xs:element type="xs:string" name="tool_consumer_instance_name" />
+				<xs:element type="xs:string" name="track_payment" />
+				<xs:element type="xs:string" name="updated_at" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<School>
+	<address_id/>
+	<bbhostname/>
+	<can_pay_with_card>true</can_pay_with_card>
+	<client_application_key/>
+	<created_at>2013-08-16T02:42:14-04:00</created_at>
+	<expiration/>
+	<force_assignment_kind/>
+	<id>51</id>
+	<name/>
+	<organization_id/>
+	<prevent_lms_role_update>false</prevent_lms_role_update>
+	<sandbox>false</sandbox>
+	<sso_secret/>
+	<test>false</test>
+	<tool_consumer_instance_guid>sakai.schoolchapters.com
+	</tool_consumer_instance_guid>
+	<tool_consumer_instance_name/>
+	<track_payment>false</track_payment>
+	<updated_at>2013-08-16T02:42:14-04:00</updated_at>
+</School>

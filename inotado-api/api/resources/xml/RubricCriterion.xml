@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RubricCriterion>
+   <created_at>2013-02-19T13:08:22-05:00</created_at>
+   <gradable>true</gradable>
+   <grade_scales>list</grade_scales>
+   <id>613</id>
+   <max_score>100</max_score>
+   <min_score>0</min_score>
+   <name>Grade</name>
+   <rubric_id>69</rubric_id>
+   <updated_at>2013-02-19T13:08:22-05:00</updated_at>
+</RubricCriterion>

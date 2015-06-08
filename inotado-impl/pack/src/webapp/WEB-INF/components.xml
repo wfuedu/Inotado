@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+						http://www.springframework.org/schema/util
+    					http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<import resource="hibernate-hbm.xml" />
+
+	<import resource="hibernate-spring.xml" />
+
+	<import resource="logic-beans.xml" />
+	
+	<bean id="edu.wfu.inotado.api.InotadoService" class="edu.wfu.inotado.impl.InotadoServiceImpl"
+		init-method="init" destroy-method="destroy">
+		<property name="toolEnabled" value="false" />
+		<property name="configurationService"
+			ref="org.sakaiproject.component.api.ServerConfigurationService" />
+		<property name="userDirectoryService"
+			ref="org.sakaiproject.user.api.UserDirectoryService" />
+		<property name="winProfileService" ref="edu.wfu.inotado.win.WinProfileService" />
+		<property name="encryptionHelper" ref="edu.wfu.inotado.helper.EncryptionHelper" />
+		<property name="cmService"
+			ref="org.sakaiproject.coursemanagement.api.CourseManagementService" />
+		<property name="sectionAwareness"
+			ref="org.sakaiproject.section.api.SectionAwareness" />
+		<property name="sectionManager" ref="org.sakaiproject.section.api.SectionManager" />
+		<property name="siteService" ref="org.sakaiproject.site.api.SiteService" />
+		<property name="hierarchyPropertyUpdateJob"
+			ref="edu.wfu.inotado.jobs.HierarchyPropertyUpdateJob" />
+		<property name="customPropertyUpdateJob"
+			ref="edu.wfu.inotado.jobs.CustomPropertyUpdateJob" />
+		<property name="jobScheduleHelper" ref="edu.wfu.inotado.helper.JobScheduleHelper" />
+		<property name="oauthHelper" ref="edu.wfu.inotado.helper.OAuthHelper" />
+		<property name="inotadoDao" ref="edu.wfu.inotado.dao.InotadoDao" />
+		<property name="sakaiProxy" ref="edu.wfu.inotado.api.SakaiProxy" />
+	</bean>
+
+	<bean id="edu.wfu.inotado.api.SakaiProxy" class="edu.wfu.inotado.impl.SakaiProxyImpl"
+		init-method="init">
+		<property name="securityService" ref="org.sakaiproject.authz.api.SecurityService" />
+		<property name="sessionManager" ref="org.sakaiproject.tool.api.SessionManager" />
+		<property name="toolManager" ref="org.sakaiproject.tool.api.ToolManager" />
+		<property name="userDirectoryService"
+			ref="org.sakaiproject.user.api.UserDirectoryService" />
+		<property name="eventTrackingService"
+			ref="org.sakaiproject.event.api.EventTrackingService" />
+		<property name="serverConfigurationService"
+			ref="org.sakaiproject.component.api.ServerConfigurationService" />
+		<property name="siteService" ref="org.sakaiproject.site.api.SiteService" />
+		<property name="cmService"
+			ref="org.sakaiproject.coursemanagement.api.CourseManagementService" />
+	</bean>
+
+	<!-- Quartz Job -->
+	<bean id="edu.wfu.inotado.jobs.HierarchyPropertyUpdateJob"
+		class="edu.wfu.inotado.jobs.HierarchyPropertyUpdateJob" init-method="init">
+		<property name="inotadoService" ref="edu.wfu.inotado.api.InotadoService" />
+	</bean>
+
+	<bean id="edu.wfu.inotado.jobs.CustomPropertyUpdateJob" class="edu.wfu.inotado.jobs.CustomPropertyUpdateJob"
+		init-method="init">
+		<property name="inotadoService" ref="edu.wfu.inotado.api.InotadoService" />
+	</bean>
+
+	<bean id="DelegatedAccessSiteHierarchyJob"
+		class="org.sakaiproject.component.app.scheduler.jobs.SpringJobBeanWrapper"
+		init-method="init">
+		<property name="beanId">
+			<value>edu.wfu.inotado.jobs.SchoolChaptersSyncJob</value>
+		</property>
+		<property name="jobName">
+			<value>SchoolChapters Sync Job</value>
+		</property>
+		<property name="schedulerManager">
+			<ref bean="org.sakaiproject.api.app.scheduler.SchedulerManager" />
+		</property>
+	</bean>
+	
+	<!--  cache beans -->
+	
+	<bean id="edu.wfu.inotado.oauthConsumerCache" class="org.sakaiproject.memory.util.EhCacheFactoryBean">
+		<property name="cacheManager">
+			<ref bean="org.sakaiproject.memory.api.MemoryService.cacheManager" />
+		</property>
+		<property name="cacheName">
+			<value>edu.wfu.inotado.oauthConsumerCache</value>
+		</property>
+		<property name="maxElementsInMemory">
+			<value>100</value>
+		</property>
+		<property name="diskPersistent">
+			<value>false</value>
+		</property>
+		<property name="eternal">
+			<value>false</value>
+		</property>
+		<property name="timeToLive">
+			<value>0</value>
+		</property>
+		<property name="timeToIdle">
+			<value>36000</value>
+		</property>
+	</bean>
+
+</beans>

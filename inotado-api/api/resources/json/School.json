@@ -1,0 +1,20 @@
+{
+   "address_id":null,
+   "bbhostname":null,
+   "can_pay_with_card":true,
+   "client_application_key":null,
+   "created_at":"2013-08-16T02:42:14-04:00",
+   "expiration":null,
+   "force_assignment_kind":null,
+   "id":51,
+   "name":null,
+   "organization_id":null,
+   "prevent_lms_role_update":false,
+   "sandbox":false,
+   "sso_secret":null,
+   "test":false,
+   "tool_consumer_instance_guid":"sakai.schoolchapters.com",
+   "tool_consumer_instance_name":instance_name,
+   "track_payment":false,
+   "updated_at":"2013-08-16T02:42:14-04:00"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<User>
+	<accessibility_mode>false</accessibility_mode>
+	<bb_cloud_user_id />
+	<created_at>xx2014-10-16T11:17:04-04:00</created_at>
+	<date_of_birth />
+	<district />
+	<email>sakai_student@schoolchapters.com</email>
+	<ethnicity_id />
+	<family_id />
+	<first_name>Sakai</first_name>
+	<freshbooks_id />
+	<funding_source_id />
+	<hmh_one_id />
+	<id>6020</id>
+	<invisible>false</invisible>
+	<invitation_accepted_at />
+	<invitation_limit />
+	<invitation_sent_at />
+	<invitation_token />
+	<invited_by_id />
+	<invited_by_type />
+	<last_name>Student</last_name>
+	<lms_identifier>fc313f1b-7eeb-4837-8a85-f79adc3b2f33</lms_identifier>
+	<password_changed_at>xx2014-10-16T11:17:04-04:00</password_changed_at>
+	<sandbox>false</sandbox>
+	<sso_source />
+	<telephone />
+	<title />
+	<updated_at>xx2014-12-02T16:09:00-05:00</updated_at>
+	<user_title />
+	<welcomed>false</welcomed>
+</User>

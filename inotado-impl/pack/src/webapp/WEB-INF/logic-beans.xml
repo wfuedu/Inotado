@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+						http://www.springframework.org/schema/util
+    					http://www.springframework.org/schema/util/spring-util-2.0.xsd">
+
+	<bean id="edu.wfu.inotado.helper.RestClientHelper" class="edu.wfu.inotado.helper.RestClientHelper">
+		<property name="encryptionHelper" ref="edu.wfu.inotado.helper.EncryptionHelper" />
+		<property name="oauthHelper" ref="edu.wfu.inotado.helper.OAuthHelper" />
+	</bean>
+
+	<bean id="edu.wfu.inotado.helper.EncryptionHelper" class="edu.wfu.inotado.helper.EncryptionHelper" />
+
+	<bean id="edu.wfu.inotado.helper.SecurityHelper" class="edu.wfu.inotado.helper.SecurityHelper" />
+
+	<bean id="edu.wfu.inotado.helper.CacheHelper" class="edu.wfu.inotado.helper.CacheHelper" />
+
+	<bean id="edu.wfu.inotado.helper.OAuthHelper" class="edu.wfu.inotado.helper.OAuthHelper">
+		<property name="consumerCache" ref="edu.wfu.inotado.oauthConsumerCache" />
+		<property name="cacheHelper" ref="edu.wfu.inotado.helper.CacheHelper" />
+	</bean>
+
+	<bean id="edu.wfu.inotado.win.WinProfileService" class="edu.wfu.inotado.win.WinProfileServiceImpl">
+		<property name="restClientHelper" ref="edu.wfu.inotado.helper.RestClientHelper" />
+		<property name="marshalHelper" ref="edu.wfu.inotado.helper.MarshalHelper" />
+		<property name="encryptionHelper" ref="edu.wfu.inotado.helper.EncryptionHelper" />
+	</bean>
+
+	<bean id="edu.wfu.inotado.helper.MarshalHelper" class="edu.wfu.inotado.helper.MarshalHelper">
+		<property name="marshaller" ref="inotado.marshaller" />
+	</bean>
+
+	<bean id="edu.wfu.inotado.helper.JobScheduleHelper" class="edu.wfu.inotado.helper.JobScheduleHelper"
+		init-method="init" lazy-init="true" />
+
+	<bean id="edu.wfu.inotado.helper.NotificationHelper" class="edu.wfu.inotado.helper.NotificationHelper"
+		init-method="init" lazy-init="true" />
+
+	<!-- Marshallers -->
+	<bean id="inotado.marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
+		<property name="packagesToScan">
+			<!-- add other packages as needed -->
+			<list>
+				<value>edu.wfu.inotado.marshalobj</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="edu.wfu.inotado.api.SyncResourcesService" class="edu.wfu.inotado.impl.SyncResourcesServiceImpl"
+		init-method="init" lazy-init="true">
+		<property name="marshalHelper" ref="edu.wfu.inotado.helper.MarshalHelper" />
+		<property name="restClientHelper" ref="edu.wfu.inotado.helper.RestClientHelper" />
+		<property name="schoolChaptersDao" ref="edu.wfu.inotado.dao.SchoolChaptersDao" />
+		<property name="genericSakaiDao" ref="edu.wfu.inotado.dao.GenericSakaiDao" />
+	</bean>
+
+	<bean id="edu.wfu.inotado.jobs.SchoolChaptersSyncJob" class="edu.wfu.inotado.jobs.SchoolChaptersSyncJob"
+		init-method="init" lazy-init="true">
+		<property name="syncResourcesService" ref="edu.wfu.inotado.api.SyncResourcesService" />
+		<property name="securityHelper" ref="edu.wfu.inotado.helper.SecurityHelper" />
+		<property name="notificationHelper" ref="edu.wfu.inotado.helper.NotificationHelper" />
+	</bean>
+
+	<!-- DAO beans that use existing Sakai data source -->
+	<bean id="edu.wfu.inotado.dao.GenericSakaiDao"
+		class="edu.wfu.inotado.dao.GenericSakaiDaoImpl">
+		<property name="jdbcTemplate">
+			<bean class="org.springframework.jdbc.core.JdbcTemplate">
+				<constructor-arg type="javax.sql.DataSource">
+					<ref bean="javax.sql.DataSource" />
+				</constructor-arg>
+			</bean>
+		</property>	
+	</bean>
+</beans>

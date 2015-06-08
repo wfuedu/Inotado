@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.wfu.inotado.model.AuthStore" table="WFU_AUTH_STORE">
+		<id name="id" type="string">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="userId" type="string" length="255" column="USER_ID" />
+		<property name="systemName" type="string" length="255"
+			column="SYSTEM_NAME" />
+		<property name="consumerKey" type="string" length="255"
+			column="CONSUMER_KEY" />
+		<property name="consumerSecret" type="string" length="255"
+			column="CONSUMER_SECRET" />
+		<property name="modified" type="timestamp" column="MODIFIED" />
+	</class>
+
+</hibernate-mapping>
+

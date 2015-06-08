@@ -1,0 +1,6 @@
+<profiles>
+	<user userName="user1" photoName="JGBFBGK.JPG" photoPrivacy="true" />
+	<user userName="user2" photoName="USER2.JPG" photoPrivacy="false" />
+	<user userName="user3" photoName="" photoPrivacy="" />
+	<user userName="unknownuser1" photoName="" photoPrivacy="" />
+</profiles>

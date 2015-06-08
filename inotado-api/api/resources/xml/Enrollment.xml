@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Enrollment>
+   <course_id>808</course_id>
+   <created_at>2014-12-02T16:39:20-05:00</created_at>
+   <id>11940</id>
+   <role_id null="true" />
+   <student_peekable>false</student_peekable>
+   <updated_at>2014-12-02T16:39:20-05:00</updated_at>
+   <user_id>4094</user_id>
+</Enrollment>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<winrequest>
+	<format>xml</format>
+	<usertype>student</usertype>
+	<userid>user1</userid>
+	<users>
+		<user><id>user1</id></user>
+		<user><id>user2</id></user>
+		<user><id>user3</id></user>
+		<user><id>unknownuser1</id></user>
+	</users>
+</winrequest>

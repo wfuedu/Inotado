@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Value" type="xs:string"/>
+	<xs:element name="winrequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="users"/>
+				<xs:element ref="usertype"/>
+				<xs:element ref="userid"/>
+				<xs:element ref="format"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="users">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="user" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="user">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="id"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="format">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="usertype">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="userid">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="id">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+</xs:schema>

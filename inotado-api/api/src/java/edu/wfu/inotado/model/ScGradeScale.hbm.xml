@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="edu.wfu.inotado.model.ScGradeScaleDTO" table="WFU_SC_GRADE_SCALE">
+		<id name="id" type="integer" column="ID" />
+		<property name="rubricCriterionId" type="integer" column="RUBRIC_CRITERION_ID"
+			not-null="true" index="IDX_RUBRIC_CRITERION_ID" />
+		<property name="name" type="string" length="255" column="NAME" />
+		<property name="score" type="double" column="SCORE" />
+		<property name="createdAt" type="timestamp" column="CREATED_AT" />
+		<property name="updatedAt" type="timestamp" column="UPDATED_AT" />
+	</class>
+</hibernate-mapping>

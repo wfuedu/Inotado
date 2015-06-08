@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="lifePlans_ws_client" basedir=".">
+	<path id="classpath">
+		<fileset dir="../lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+
+	<target name="generateWinProfileRequest">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/WinProfileRequest.xsd" 
+			package="edu.wfu.inotado.marshalobj.win"
+			binding="../xsd/WinProfileRequest_binding.xml"
+												extension="true"/>
+	</target>
+	
+	<target name="generateWinProfileResponse">
+			<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+			<xjc destdir="../../src/java" schema="../xsd/WinProfileResponse.xsd" 
+				package="edu.wfu.inotado.marshalobj.win"
+				binding="../xsd/WinProfileResponse_binding.xml"
+													extension="true"/>
+	</target>
+	
+
+
+</project>

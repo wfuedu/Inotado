@@ -1,0 +1,52 @@
+<xs:schema attributeFormDefault="unqualified"
+	elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Assignment">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element type="xs:string" name="active" />
+				<xs:element type="xs:string" name="assignment_submissions" />
+				<xs:element type="xs:string" name="badge_id" />
+				<xs:element type="xs:string" name="bb_deployment_status" />
+				<xs:element name="course">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="bb_cloud_course_id" />
+							<xs:element type="xs:string" name="bbid" />
+							<xs:element type="xs:string" name="course_template_id" />
+							<xs:element type="xs:string" name="created_at" />
+							<xs:element type="xs:string" name="description" />
+							<xs:element type="xs:string" name="edit_description" />
+							<xs:element type="xs:int" name="id" />
+							<xs:element type="xs:string" name="inactive" />
+							<xs:element type="xs:string" name="kind" />
+							<xs:element type="xs:string" name="lms_identifier" />
+							<xs:element type="xs:string" name="name" />
+							<xs:element type="xs:string" name="product_id" />
+							<xs:element type="xs:int" name="school_id" />
+							<xs:element type="xs:string" name="system_origin" />
+							<xs:element type="xs:int" name="template" />
+							<xs:element type="xs:string" name="updated_at" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element type="xs:int" name="course_id" />
+				<xs:element type="xs:string" name="created_at" />
+				<xs:element type="xs:string" name="description" />
+				<xs:element type="xs:string" name="due_date" />
+				<xs:element type="xs:string" name="externalidentifier" />
+				<xs:element type="xs:int" name="id" />
+				<xs:element type="xs:string" name="kind" />
+				<xs:element type="xs:string" name="lms_identifier" />
+				<xs:element type="xs:string" name="name" />
+				<xs:element type="xs:string" name="parent_id" />
+				<xs:element type="xs:string" name="product_id" />
+				<xs:element type="xs:string" name="rubric" />
+				<xs:element type="xs:int" name="rubric_id" />
+				<xs:element type="xs:int" name="school_id" />
+				<xs:element type="xs:string" name="system_origin" />
+				<xs:element type="xs:string" name="template" />
+				<xs:element type="xs:string" name="updated_at" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

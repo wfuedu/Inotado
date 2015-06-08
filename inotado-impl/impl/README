@@ -1,0 +1,8 @@
+Class path needs to be reconfigured to run unit test in eclipse:
+	Link pack/src/webapp/WEB-INF, and add it into classpath.
+	Remove the invalid entry at the top. This step should also clear out the project error.
+	
+ 
+WARNING: This module contains spring oxm and core verison 3. Which may cause conflict to the provided 2.5 version.
+
+(optional)Install the spring core to local maven repo: mvn install:install-file -Dfile=d:\temp\spring-core-3.2.5.RELEASE.hack.jar -DgroupId=org.springframework -DartifactId=spring-core-hack -Dversion=3.2.5 -Dpackaging=jar

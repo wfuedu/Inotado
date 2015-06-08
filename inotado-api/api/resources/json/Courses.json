@@ -1,0 +1,453 @@
+[  
+   {  
+      "bbid":null,
+      "course_template_id":null,
+      "created_at":"2013-08-16T02:42:14-04:00",
+      "id":808,
+      "kind":"college",
+      "name":null,
+      "school_id":51,
+      "template":0,
+      "updated_at":"2013-08-16T02:42:14-04:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":808,
+            "created_at":"2014-12-02T10:54:27-05:00",
+            "id":11919,
+            "role_id":null,
+            "student_peekable":false,
+            "updated_at":"2014-12-02T10:54:27-05:00",
+            "user_id":4264
+         },
+         {  
+            "course_id":808,
+            "created_at":"2014-12-02T16:39:20-05:00",
+            "id":11940,
+            "role_id":null,
+            "student_peekable":false,
+            "updated_at":"2014-12-02T16:39:20-05:00",
+            "user_id":4094
+         }
+      ],
+      "lms_identifier":null,
+      "system_origin":"SC",
+      "course_standards":[  
+
+      ]
+   },
+   {  
+      "bbid":"SMPL101 Spring 2013",
+      "course_template_id":null,
+      "created_at":"2013-08-16T02:42:15-04:00",
+      "id":809,
+      "kind":"college",
+      "name":"SMPL101 Spring 2013",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2013-08-16T02:42:15-04:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":809,
+            "created_at":"2013-08-16T02:42:15-04:00",
+            "id":8292,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2013-08-16T02:44:46-04:00",
+            "user_id":4094
+         },
+         {  
+            "course_id":809,
+            "created_at":"2013-08-20T00:29:45-04:00",
+            "id":8613,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2013-08-20T00:29:45-04:00",
+            "user_id":4264
+         }
+      ],
+      "lms_identifier":null,
+      "system_origin":"SC",
+      "course_standards":[  
+         {  
+            "course_id":809,
+            "created_at":"2013-08-16T02:44:15-04:00",
+            "forkable":null,
+            "id":1295,
+            "standard_id":346,
+            "updated_at":"2013-08-16T02:44:15-04:00",
+            "writable":null
+         }
+      ]
+   },
+   {  
+      "bbid":"mercury site",
+      "course_template_id":null,
+      "created_at":"2013-08-20T22:13:31-04:00",
+      "id":855,
+      "kind":"college",
+      "name":"mercury site",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2013-08-20T22:13:31-04:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":855,
+            "created_at":"2013-08-20T22:13:31-04:00",
+            "id":8724,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2013-08-20T22:13:31-04:00",
+            "user_id":4264
+         }
+      ],
+      "lms_identifier":null,
+      "system_origin":"SC",
+      "course_standards":[  
+
+      ]
+   },
+   {  
+      "bbid":"SMPL202 Summer 2013",
+      "course_template_id":null,
+      "created_at":"2013-08-20T22:35:02-04:00",
+      "id":857,
+      "kind":"college",
+      "name":"SMPL202 Summer 2013",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2013-08-20T22:35:02-04:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":857,
+            "created_at":"2013-08-20T22:35:02-04:00",
+            "id":8726,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2013-08-20T22:35:02-04:00",
+            "user_id":4264
+         },
+         {  
+            "course_id":857,
+            "created_at":"2013-08-20T22:36:15-04:00",
+            "id":8728,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2013-08-20T22:38:49-04:00",
+            "user_id":4094
+         }
+      ],
+      "lms_identifier":null,
+      "system_origin":"SC",
+      "course_standards":[  
+
+      ]
+   },
+   {  
+      "bbid":"SMPL101 Summer 2013",
+      "course_template_id":null,
+      "created_at":"2014-06-19T12:57:34-04:00",
+      "id":1296,
+      "kind":"college",
+      "name":"SMPL101 Summer 2013",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2014-06-19T12:57:34-04:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":1296,
+            "created_at":"2014-06-19T12:57:35-04:00",
+            "id":11356,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2014-06-19T12:57:35-04:00",
+            "user_id":4264
+         }
+      ],
+      "lms_identifier":"SMPL101 Summer 2013",
+      "system_origin":"SC",
+      "course_standards":[  
+
+      ]
+   },
+   {  
+      "bbid":"Sakai Test 2014",
+      "course_template_id":null,
+      "created_at":"2014-06-19T13:21:38-04:00",
+      "id":1297,
+      "kind":"college",
+      "name":"Sakai Test 2014",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2014-06-19T13:21:38-04:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":1297,
+            "created_at":"2014-06-19T13:21:38-04:00",
+            "id":11357,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2014-06-19T13:21:38-04:00",
+            "user_id":4264
+         }
+      ],
+      "lms_identifier":"Sakai Test 2014",
+      "system_origin":"SC",
+      "course_standards":[  
+
+      ]
+   },
+   {  
+      "bbid":"Fall-2014",
+      "course_template_id":null,
+      "created_at":"2014-09-18T23:49:08-04:00",
+      "id":1438,
+      "kind":"college",
+      "name":"Fall-2014",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2014-12-19T10:24:43-05:00",
+      "course_documents":[  
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T11:37:32-05:00",
+            "display_order":0,
+            "document_id":19740,
+            "id":716,
+            "updated_at":"2014-12-02T11:37:57-05:00"
+         },
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T11:37:48-05:00",
+            "display_order":1,
+            "document_id":19742,
+            "id":717,
+            "updated_at":"2014-12-02T11:37:57-05:00"
+         },
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T11:37:30-05:00",
+            "display_order":2,
+            "document_id":19739,
+            "id":715,
+            "updated_at":"2014-12-02T11:37:57-05:00"
+         }
+      ],
+      "enrollments":[  
+         {  
+            "course_id":1438,
+            "created_at":"2014-09-18T23:49:08-04:00",
+            "id":11714,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2014-09-18T23:49:08-04:00",
+            "user_id":4094
+         },
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T10:48:16-05:00",
+            "id":11918,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2014-12-02T10:48:16-05:00",
+            "user_id":4264
+         },
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T10:56:29-05:00",
+            "id":11922,
+            "role_id":5,
+            "student_peekable":false,
+            "updated_at":"2014-12-02T10:56:29-05:00",
+            "user_id":6020
+         },
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T10:56:29-05:00",
+            "id":11923,
+            "role_id":5,
+            "student_peekable":false,
+            "updated_at":"2014-12-02T10:56:29-05:00",
+            "user_id":6065
+         }
+      ],
+      "lms_identifier":"Fall-2014",
+      "system_origin":"SC",
+      "course_standards":[  
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T11:36:02-05:00",
+            "forkable":null,
+            "id":2024,
+            "standard_id":464,
+            "updated_at":"2014-12-02T11:36:02-05:00",
+            "writable":null
+         },
+         {  
+            "course_id":1438,
+            "created_at":"2014-12-02T11:36:02-05:00",
+            "forkable":null,
+            "id":2025,
+            "standard_id":465,
+            "updated_at":"2014-12-02T11:36:02-05:00",
+            "writable":null
+         }
+      ],
+      "assignments":[  
+         {  
+            "id":4413,
+            "name":"Sakai Basic ",
+            "lms_identifier":null,
+            "system_origin":"SC"
+         },
+         {  
+            "id":4414,
+            "name":"Sakai Automatic",
+            "lms_identifier":null,
+            "system_origin":"SC"
+         },
+         {  
+            "id":4415,
+            "name":"Sakai Manual",
+            "lms_identifier":null,
+            "system_origin":"SC"
+         },
+         {  
+            "id":4416,
+            "name":"Sakai BA 1",
+            "lms_identifier":null,
+            "system_origin":"SC"
+         },
+         {  
+            "id":4423,
+            "name":"Rubric Test",
+            "lms_identifier":null,
+            "system_origin":"SC"
+         }
+      ]
+   },
+   {  
+      "bbid":"CSC 101 10 Spring 2013",
+      "course_template_id":null,
+      "created_at":"2014-10-16T11:02:17-04:00",
+      "id":1469,
+      "kind":"college",
+      "name":"CSC 101 10 Spring 2013",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2014-10-16T11:02:17-04:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":1469,
+            "created_at":"2014-10-16T11:02:17-04:00",
+            "id":11809,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2014-10-16T11:02:17-04:00",
+            "user_id":6019
+         },
+         {  
+            "course_id":1469,
+            "created_at":"2014-10-16T11:17:06-04:00",
+            "id":11810,
+            "role_id":5,
+            "student_peekable":false,
+            "updated_at":"2014-10-16T11:17:06-04:00",
+            "user_id":6020
+         }
+      ],
+      "lms_identifier":"CSC 101 10 Spring 2013",
+      "system_origin":"CANVAS",
+      "course_standards":[  
+
+      ],
+      "assignments":[  
+         {  
+            "id":4277,
+            "name":"Sample Assignment",
+            "lms_identifier":null,
+            "system_origin":"CANVAS"
+         }
+      ]
+   },
+   {  
+      "bbid":"ENG 101 A Summer 2013",
+      "course_template_id":null,
+      "created_at":"2014-12-16T10:42:56-05:00",
+      "id":1537,
+      "kind":"college",
+      "name":"ENG 101 A Summer 2013",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2014-12-16T10:42:56-05:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":1537,
+            "created_at":"2014-12-16T10:42:56-05:00",
+            "id":11992,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2014-12-16T10:42:56-05:00",
+            "user_id":6019
+         }
+      ],
+      "lms_identifier":"ENG 101 A Summer 2013",
+      "system_origin":"CANVAS",
+      "course_standards":[  
+
+      ]
+   },
+   {  
+      "bbid":"ENG 101 B Summer 2013",
+      "course_template_id":null,
+      "created_at":"2014-12-16T14:33:53-05:00",
+      "id":1538,
+      "kind":"college",
+      "name":"ENG 101 B Summer 2013",
+      "school_id":51,
+      "template":0,
+      "updated_at":"2014-12-16T14:33:53-05:00",
+      "course_documents":[  
+
+      ],
+      "enrollments":[  
+         {  
+            "course_id":1538,
+            "created_at":"2014-12-16T14:33:53-05:00",
+            "id":11993,
+            "role_id":3,
+            "student_peekable":false,
+            "updated_at":"2014-12-16T14:33:53-05:00",
+            "user_id":6019
+         }
+      ],
+      "lms_identifier":"c00056ad-f93a-42ad-9dc2-42cc34cc2a02",
+      "system_origin":"SAKAI",
+      "course_standards":[  
+
+      ]
+   }
+]

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<project name="SchoolChapters" basedir=".">
+	<path id="classpath">
+		<fileset dir="../lib/mods">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="../lib">
+			<include name="*.jar" />
+			<exclude name="jaxb-impl.jar" />
+		</fileset>
+
+	</path>
+
+	<target name="generateSchool">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/School.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateCourse">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/Course.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateEnrollment">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/Enrollment.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateCourseDocument">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/CourseDocument.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateCourseStandard">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/CourseStandard.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateAssignment">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/Assignment.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateGradeScale">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/GradeScale.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateRubricCriterion">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/RubricCriterion.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateRubric">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/Rubric.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateGradePart">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/GradePart.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateGrade">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/Grade.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateUser">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/User.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+	<target name="generateAssignmentSubmission">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="classpath" />
+		<xjc destdir="../../src/java" schema="../xsd/schoolchapters/AssignmentSubmission.xsd" package="edu.wfu.inotado.marshalobj.sc" extension="true" />
+	</target>
+
+</project>

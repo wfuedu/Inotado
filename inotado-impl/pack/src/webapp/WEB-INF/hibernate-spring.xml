@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+	"http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<!-- DAO and transaction proxy -->
+	<bean id="edu.wfu.inotado.dao.InotadoTarget" class="edu.wfu.inotado.dao.InotadoDaoImpl">
+		<property name="sessionFactory"
+			ref="org.sakaiproject.springframework.orm.hibernate.GlobalSessionFactory" />
+		<property name="persistentClasses">
+			<list>
+				<value>edu.wfu.inotado.model.AuthStore</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="edu.wfu.inotado.dao.SchoolChaptersTarget" class="edu.wfu.inotado.dao.SchoolChaptersDaoImpl">
+		<property name="sessionFactory"
+			ref="org.sakaiproject.springframework.orm.hibernate.GlobalSessionFactory" />
+		<property name="persistentClasses">
+			<list>
+				<value>edu.wfu.inotado.model.ScGradeDTO</value>
+				<value>edu.wfu.inotado.model.ScGradePartDTO</value>
+				<value>edu.wfu.inotado.model.ScGradeScaleDTO</value>
+				<value>edu.wfu.inotado.model.ScRubricDTO</value>
+				<value>edu.wfu.inotado.model.ScRubricCriterionDTO</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="edu.wfu.inotado.dao.InotadoDao"
+		class="org.sakaiproject.genericdao.springutil.CurrentClassLoaderTxProxyFactoryBean">
+		<property name="transactionManager"
+			ref="org.sakaiproject.springframework.orm.hibernate.GlobalTransactionManager" />
+		<property name="target" ref="edu.wfu.inotado.dao.InotadoTarget" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="can*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="check*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="count*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="edu.wfu.inotado.dao.SchoolChaptersDao"
+		class="org.sakaiproject.genericdao.springutil.CurrentClassLoaderTxProxyFactoryBean">
+		<property name="transactionManager"
+			ref="org.sakaiproject.springframework.orm.hibernate.GlobalTransactionManager" />
+		<property name="target" ref="edu.wfu.inotado.dao.SchoolChaptersTarget" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="get*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="can*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="check*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="count*">PROPAGATION_REQUIRED,readOnly</prop>
+                <prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="inotado.hbmMapping" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<value>edu/wfu/inotado/model/AuthStore.hbm.xml</value>
+				<value>edu/wfu/inotado/model/ScGrade.hbm.xml</value>
+				<value>edu/wfu/inotado/model/ScGradePart.hbm.xml</value>
+				<value>edu/wfu/inotado/model/ScGradeScale.hbm.xml</value>
+				<value>edu/wfu/inotado/model/ScRubric.hbm.xml</value>
+				<value>edu/wfu/inotado/model/ScRubricCriterion.hbm.xml</value>
+			</list>
+		</constructor-arg>
+	</bean>
+
+
+</beans>

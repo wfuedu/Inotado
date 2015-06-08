@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Assignment>
+	<active>true</active>
+	<assignment_submissions />
+	<badge_id />
+	<bb_deployment_status />
+	<course>
+		<bb_cloud_course_id />
+		<bbid>CSC 101 10 Spring 2013</bbid>
+		<course_template_id />
+		<created_at>xx2014-10-16T11:02:17-04:00</created_at>
+		<description />
+		<edit_description />
+		<id>1469</id>
+		<inactive>false</inactive>
+		<kind>college</kind>
+		<lms_identifier>CSC 101 10 Spring 2013</lms_identifier>
+		<name>CSC 101 10 Spring 2013</name>
+		<product_id />
+		<school_id>51</school_id>
+		<system_origin>CANVAS</system_origin>
+		<template>0</template>
+		<updated_at>xx2014-10-16T11:02:17-04:00</updated_at>
+	</course>
+	<course_id>1469</course_id>
+	<created_at>xx2014-10-16T11:16:53-04:00</created_at>
+	<description />
+	<due_date />
+	<externalidentifier>6d4266bf-7d76-41e4-85dc-bca9fbce4013
+	</externalidentifier>
+	<id>4277</id>
+	<kind>basic</kind>
+	<lms_identifier />
+	<name>Sample Assignment</name>
+	<parent_id />
+	<product_id />
+	<rubric />
+	<rubric_id>69</rubric_id>
+	<school_id>51</school_id>
+	<system_origin>CANVAS</system_origin>
+	<template>false</template>
+	<updated_at>xx2014-10-16T11:24:25-04:00</updated_at>
+</Assignment>

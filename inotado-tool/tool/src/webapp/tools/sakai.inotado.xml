@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<registration>
+	<tool id="sakai.inotado" title="Inotado"
+		description="Inotado - A Wake Forest University custom tool">
+
+		<!--  category name="course" />
+		<category name="project" /-->
+		<category name="sakai.admin" />
+		<category name="myworkspace" />
+
+		<!-- visibility/access -->
+		<!-- <configuration name="functions.require" value="some.permission"/> -->
+
+	</tool>
+</registration>
+
